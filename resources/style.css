@@ -8,13 +8,20 @@ h1 {
   font-size: 14px;
   padding-left: 10px;
 }
-.container {
+
+/* header flex container */
+
+.head-container {
   display: inline-flex;
   width: 100%;
   height: 75px;
   border: solid;
   border-width: thin;
+  margin-bottom: 10px;
 }
+
+/* logo-section */
+
 .logo {
   width: 200px;
   height: 75px;
@@ -22,15 +29,106 @@ h1 {
   align-items: center;
   padding-left: 30px;
 }
+
+/* site-navigation */
+
 .navigation {
   display: inline-flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
   padding-right: 30px;
+  justify-content: flex-end;
+  width: 100%;
 }
-.list li {
+.navigation-list {
   list-style-type: none;
   margin: 15px;
   text-decoration: underline;
+}
+
+/* main-section */
+
+.main-container {
+  display: flex;
+  border: solid;
+  border-width: thin;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-right: 35px;
+  width: 1130px;
+  height: 100%;
+
+}
+.large {
+  display: inline-flex;
+  border: solid;
+  border-width: thin;
+  width: 630px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 35px;
+}
+
+/* .large childrens */
+
+.article-zero{
+  border: solid;
+  border-width: thin;
+}
+.article-one {
+  border: solid;
+  border-width: thin;
+}
+.article-two {
+  border: solid;
+  border-width: thin;
+}
+
+/* .large childrens end */
+
+.middle {
+  border: solid;
+  border-width: thin;
+  width: 300px;
+  height: 100%;
+  margin-right: 35px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* .middle childrens */
+
+.article-three {
+  border: solid;
+  border-width: thin;
+}
+.article-four {
+  border: solid;
+  border-width: thin;
+}
+
+/* middle childrens end */
+
+.small {
+  display: inline-flex;
+  flex-direction: column;
+  border: solid;
+  border-width: thin;
+  width: 240px;
+  margin-right: 35px;
+  justify-content: flex-start;
+}
+
+/* small childrens */
+
+.article-five {
+  border: solid;
+  border-width: thin;
+}
+
+.article-title {
+  border: solid;
+  border-width: thin;
 }
