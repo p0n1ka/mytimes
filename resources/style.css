@@ -51,17 +51,13 @@ h1 {
   display: flex;
   border: solid;
   border-width: thin;
-  margin-top: 15px;
-  margin-right: 10px;
   margin: 0 auto;
   padding-top: 35px;
-  padding-right: 35px;
   width: 1130px;
   height: 100%;
-
 }
 .large {
-  display: inline-flex;
+  display: flex;
   border: solid;
   border-width: thin;
   width: 630px;
@@ -89,12 +85,12 @@ h1 {
 /* .large childrens end */
 
 .middle {
+  display: inline-flex;
   border: solid;
   border-width: thin;
   width: 300px;
   height: 100%;
   margin-right: 35px;
-  display: inline-flex;
   flex-direction: column;
 }
 
@@ -112,13 +108,12 @@ h1 {
 /* middle childrens end */
 
 .small {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   border: solid;
   border-width: thin;
   width: 240px;
   margin-right: 35px;
-  justify-content: flex-start;
 }
 
 /* small childrens */
@@ -131,4 +126,17 @@ h1 {
 .article-title {
   border: solid;
   border-width: thin;
+}
+
+/* images and fonts on them */
+
+.headline-image {
+  background-image: url("images/img-story-main.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.headline-img-1 {
+  background-image: url("images/img-story-1.png");
 }
