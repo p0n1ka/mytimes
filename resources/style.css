@@ -49,60 +49,66 @@ h1 {
 
 .main-container {
   display: flex;
-  border: solid;
-  border-width: thin;
-  margin: 0 auto;
-  padding-top: 35px;
-  width: 1130px;
-  height: 100%;
+  justify-content: space-between;
+  margin: 35px;
 }
 .large {
   display: flex;
-  border: solid;
-  border-width: thin;
+  flex-flow: row wrap;
   width: 630px;
-  height: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-right: 35px;
+  justify-content: space-between;
 }
 
 /* .large childrens */
 
 .article-zero{
-  border: solid;
-  border-width: thin;
+  margin: 0;
 }
 .article-one {
-  border: solid;
-  border-width: thin;
+  margin: 0;
+  width: 300px;
 }
 .article-two {
-  border: solid;
-  border-width: thin;
+  margin: 0;
+  width: 300px;
+}
+.headline-image-main .headline-text-main {
+  display: flex;
+  background-image: url("images/img-story-main.png");
+  height: 300px;
+  width: 600px;
+  flex: 1 1 auto;
+}
+.headline-img-1 .headline-text {
+  display: flex;
+  background-image: url("images/img-story-2.png");
+  width: 300px;
+  height: 300px;
+  flex: 1 1 auto;
+}
+.headline-img-2 .headline-text {
+  display: flex;
+  background-image: url("images/img-story-3.png");
+  width: 300px;
+  height: 300px;
+  flex: 1 1 auto;
 }
 
 /* .large childrens end */
 
 .middle {
   display: inline-flex;
-  border: solid;
-  border-width: thin;
-  width: 300px;
-  height: 100%;
-  margin-right: 35px;
   flex-direction: column;
+  width: 300px;
 }
 
 /* .middle childrens */
 
 .article-three {
-  border: solid;
-  border-width: thin;
+  margin: 0;
 }
 .article-four {
-  border: solid;
-  border-width: thin;
+  margin: 0;
 }
 
 /* middle childrens end */
@@ -110,33 +116,38 @@ h1 {
 .small {
   display: flex;
   flex-direction: column;
-  border: solid;
-  border-width: thin;
   width: 240px;
-  margin-right: 35px;
 }
 
 /* small childrens */
 
 .article-five {
-  border: solid;
-  border-width: thin;
+  margin: 0;
 }
 
 .article-title {
-  border: solid;
-  border-width: thin;
+  margin: 0;
 }
 
 /* images and fonts on them */
 
-.headline-image {
-  background-image: url("images/img-story-main.png");
+.headline-text-main{
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
 }
-.headline-img-1 {
+
+.headline-text {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.headline-img-3 .headline-text {
+  display: flex;
   background-image: url("images/img-story-1.png");
+  width: 100%;
+  height: 300px;
 }
